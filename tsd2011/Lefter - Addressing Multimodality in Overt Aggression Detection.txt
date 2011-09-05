@@ -1,0 +1,39 @@
+Addressing Multimodality in Overt Aggression Detection
+======================================================
+:presenter:  Iulia Lefter
+:presented:  9/2/2011
+:conference: TSD 2011
+:url:        http://www.springerlink.com/content/qr535n8984141111/
+
+Problem
+-------
+
+Surveillance is everywhere and is done by humans and they are overloaded,
+expensive and make errors. Currently mainly video is used.
+
+Data used
+---------
+
+Scenarios played by actors, many improvisations. As audio and video is not
+always correlated, they are annotated separately, several human annotators
+annotated data.
+
+Video
+~~~~~
+
+STIP
+* captures movement
+* histogram is saved and extracted
+
+Audio
+~~~~~
+
+Only prosodic features are used, no semantic.
+
+Conclusion
+----------
+
+Audio frames, video frames and their combination was evaluated and recognizer
+was trained. In the end, it has been shown, that results from these individual
+inputs may vary. More complex fusion might be interesting and use some semantic
+data.
