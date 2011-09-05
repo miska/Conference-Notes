@@ -1,8 +1,9 @@
 Dealing with Unexpected Words in Automatic Recognition Of Speech
 ================================================================
-:presented:  9/2/2011
 :presenter:  Hynek Hermansky
+:presented:  9/2/2011
 :conference: TSD 2011
+:url:        http://www.springerlink.com/content/7n7182254435860w/
 
 Final probability is probability from the acoustic model times probability of
 language model. Problems can be in both models. We can get some acoustic
