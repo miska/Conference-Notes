@@ -1,0 +1,52 @@
+Question Classification by Weighted Combination of Lexical, Syntactic and Semantic Features
+===========================================================================================
+:presenter:  B. Loni
+:presented:  9/2/2011
+:conference: TSD 2011
+:url:        http://www.springerlink.com/content/x041x7h170486283/
+
+Classification is a subsystem of question answering systems.
+
+Query -> Query procession (reformulation) -> Document searching -> answer extraction -> Answering
+
+Classification comes to play during Query processing. Extracts several
+features, combines them and uses statistical classifier.
+
+Features
+--------
+
+Types
+~~~~~
+
+* Lexical
+** Unigrams
+** Bigrams
+** WH-words (what, where, wh.*)
+** Word-shapes (lowercase, uppercase, ...)
+* Syntactical
+** Tagged unigrams
+** Headwords (most important word of the sentence)
+* Semantic
+** Headword Hyphenyms (words higher in hierarchy of wordnet)
+** Related words
+
+Combining
+~~~~~~~~~
+
+* simple combination
+* weighted combination
+** better
+** how to get weights
+
+Training weights
+^^^^^^^^^^^^^^^^
+
+Combining with unigram with various weights and obtaining the weights from
+evaluating results of the combination.
+
+Conclusion
+----------
+
+* some classes are harder to recognize
+* wordnet can help
+* weighting is a good idea instead of plain combination
