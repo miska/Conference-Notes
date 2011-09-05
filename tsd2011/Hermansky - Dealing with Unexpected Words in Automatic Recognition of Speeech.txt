@@ -1,0 +1,30 @@
+Dealing with Unexpected Words in Automatic Recognition Of Speech
+================================================================
+:presented:  9/2/2011
+:presenter:  Hynek Hermansky
+:conference: TSD 2011
+
+Final probability is probability from the acoustic model times probability of
+language model. Problems can be in both models. We can get some acoustic
+distortions or we can get new unknown words (or different language). As a
+result, out of vocabulary words will get replaced with something that is in
+the vocabulary and sounds similarly. This error also distorts the words around.
+But these out of vocabulary words might have high information value. How humans
+do deal with unexpected words? We adjust our models. We are processing words
+and creating a prediction in the parallel and compare them. When these don't
+match, we can reevaluate or react somehow. We can evaluate probabilities with
+language model and without and if they differ too much, we are in trouble.
+
+Processing of the speech seems to be multistream. In one stream we use language
+model, in other we don't. We also use prior experience sometimes. But in the
+general, there can be much more. In the end, we combine all streams. We will
+get less errors but more false hits. Fletcher and colleagues divided the sound
+into subbands (high frequency, low frequency, ...) and the error is the product
+of the probability of error in each of subbands. In human brain, there are many
+many different channels. So to emulate human brain better, we can have many
+stream, that will get somehow combined, we evaluate the result and if we are
+not happy, we recombine the streams inn different way and hope to get better
+results.
+
+So the future looks like a lot of parallel processing with multiple channels
+containing not only voice data, but also all other possible information.
