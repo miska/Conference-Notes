@@ -1,13 +1,17 @@
 Question Classification by Weighted Combination of Lexical, Syntactic and Semantic Features
 ===========================================================================================
-:presenter:  B. Loni
-:presented:  9/2/2011
 :conference: TSD 2011
+:presented:  9/2/2011
+:presenter:  B. Loni
+:type:       talk
 :url:        http://www.springerlink.com/content/x041x7h170486283/
 
 Classification is a subsystem of question answering systems.
 
-Query -> Query procession (reformulation) -> Document searching -> answer extraction -> Answering
+[graphviz]
+-----------------------------------------------------------------
+digraph G { rankdir=UD; Query -> "Query procession (reformulation)" -> "Document searching" -> "Answer extraction" -> Answering }
+-----------------------------------------------------------------
 
 Classification comes to play during Query processing. Extracts several
 features, combines them and uses statistical classifier.
