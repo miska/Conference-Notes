@@ -7,6 +7,7 @@ represents one talk. All notes are written using asciidoc and have a few
 metadata. Suppoorted metadata (all of them are opptional) are as follows:
 
 * +:conference:+ - name or abbreviation of the conference
-* +:presenter:+ - who did the talk
 * +:presented:+ - date when talk was presented in +MM/DD/YYYY+ format
+* +:presenter:+ - who did the talk
+* +:type:+ - can be either `talk`, `workshop` or `BoF`
 * +:url:+ - url to the article
