@@ -1,0 +1,64 @@
+Linux Kernel Power Management on Embedded Systems
+=================================================
+:presenter:  Wysocki, Rafael
+:presented:  9/14/2011
+:type:       talk
+:conference: osc2011
+
+Embedded
+--------
+
+* Small, SoC, low power consumption
+* typically ARM
+* devices are not discoverable, but memory mapped and fixed
+* more controllable hardware
+* no BIOS
+* everything is uninitialized in the beginning, firmware initializes some things and loads the kernel - popular one is U-Boot
+* clocks can be manipulated
+* different power domains (sets of devices connected to same power line)
+* interrupts from the sleep states
+* interfaces for voltage/frequency scaling
+* multiple CPU cores that can be even different architecture
+* various caches
+
+CPUidle
+~~~~~~~
+
+CPU scheduler knows, when CPU is or will be idle, we can use it for power
+saving. Some systems have for example low performance cores and high
+performance cores. During low load, low performance cores are used and during
+high load, more powerful ones are waked up. Switching off some cores might not
+be easy, as CPUs can be part of the same power domain as some other crucial
+system (for example IO controller, DMA, cache, ...). Before going to sleep, it
+is good to know, how long does it take to go to the sleep, to wake up and how
+much energy it will take. Power Break Even Time - shortest time it make sense
+to go to the sleep for.
+
+CPUfreq
+~~~~~~~
+
+Scale CPU frequency and voltage to drain less power. Possible problem is, that
+CPU clock might be shared with some other devices. Clocks doesn't have to be
+changeable every time, device might need to finish operation first. There also
+might be some voltage and clock requirements from other connected devices.
+
+PM
+~~
+
+Every subsystem has callbacks for shutting down and waking up. But these can be
+overrided by power domain callbacks `dev_pm_domain` (newly added in 3.0
+kernel). Power domain handling has been implementer in 3.1.
+
+Sleep States
+~~~~~~~~~~~~
+
+* Android uses system suspend for power saving
+* Wakeup from deep low-power states may require special signaling
+* Difference from power off is preservation of RAM
+* Some systems requires periodic wake ups
+* state features
+** user space is frozen
+** reduced energy consumption
+** user space should be able to say how to wake
+** enterable any time
+

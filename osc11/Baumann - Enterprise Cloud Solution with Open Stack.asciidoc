@@ -1,0 +1,33 @@
+Enterprise Cloud Solution with Open Stack
+=========================================
+:presenter:  Christian Baumann
+:presented:  9/11/2011
+:type:       talk
+:conference: osc2011
+
+One of the open source cloud solutions. Aim is to be simple and massively
+scalable. Apache 2.0 licence, hosted on launchpad.
+
+Tree main project:
+* Compute (Nova)
+** Computing part
+** Manages creation and deployment of virtual machines
+** EC2 and OpenStack API
+* Image Registration (Glance)
+** registers virtual disk files
+** focused on scalability
+** outside access via REST
+** can use Swift as a backend
+* Object Storage (Swift)
+** no block devices
+** REST interface
+** runs on normal machines
+** several components
+*** proxy servers - connecting stuff
+*** storage servers - storing data
+*** tool servers - maintenance
+** hardware is divided into availability zones
+
+Users management is also possible, based on private/public keys. Several roles
+and projects can be defined and permissions granularized.
+
