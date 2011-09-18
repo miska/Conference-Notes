@@ -1,0 +1,11 @@
+TSD 2011
+========
+
+The 14th International Conference TSD 2011 held on September 1 – 5, 2011 at angelo Hotel Pilsen Plzeň – Czech Republic.
+
+The 14th International Conference of Text, Speech and Dialogue TSD2011 was concerned with the topics in the field of natural language processing, in particular:
+
+* corpora, texts and transcription,
+* speech analysis, recognition and synthesis,
+* their intertwining within NL dialogue systems.
+
