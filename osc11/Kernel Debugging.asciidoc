@@ -1,0 +1,53 @@
+Kernel Debugging
+================
+:presented:  9/12/2011
+:type:       talk
+:conference: osc11
+
+Kernel dumping is a hook, that allows to store the dump of the kernel and 
+analyze it later. Dump can be analyzed later even on different machine. There 
+are many tools to do so, but the best is kdump.
+
+kdump
+-----
+
+There is a reserved memory, where second kernel is loaded. If kernel crashes, 
+panic routine jumps to the second kernel, boots it up together with it's 
+initrd, which stores dump to the disk and then reboots.
+
+Crashdump
+---------
+
+Ordinary ELF core filee.
+
+`crash`
+-------
+
+Tool based on gdb to analyze coredumps.
+
+Setting things up
+-----------------
+
+Setting it up is easy - `yast2 kdump`. More memory you have, more memory needs 
+to be reserved for kdump (4092M ~ 128M). There can bee a special kernel for 
+kdump, possibly smaller. Make sure that there is `kexec` enabled, enough free 
+space, `SysRq` enabled, debugging information for the kernel.
+
+Meemory dump can contain sensitive data ;-)
+
+`kdumptool`
+-----------
+
+Tool for creating dumps, but it is only one binary and it might be a little bit 
+limited.
+
+Virtual Machine
+---------------
+
+We can use hypervizor.
+
+`crasher`
+---------
+
+Kernel module to crash kernel.
+
