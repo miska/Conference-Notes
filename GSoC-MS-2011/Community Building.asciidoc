@@ -1,0 +1,51 @@
+Community Building
+==================
+:presenter: Fridrich Strba
+:presented: 10/22/2011
+
+LibreOffice example
+-------------------
+
+What happened
+~~~~~~~~~~~~~
+
+SUN promised to setup foundation for OpenOffice, but always kept postponing it. Company developers didn't communicated to the community, didn't accepted patches, had complicated processes and didn't cared about community and it was hard for community. When SUN was sold to Oracle and there was some hope, but haven't been fullfiled. So fork was created, most comunity followed. Huge number of new contributors jioned afterwards, when LibreOffice was free of complicated proccesses. Newcomers were threated much more politely then in Oracle.
+
+What helped
+~~~~~~~~~~~
+
+ * wiki with simple tasks
+ * never threat people with disrespect
+ * even not perfect patches integrated (polished by developers afterwards)
+ ** people really appreciate having patch in at it encourages them
+ ** "Thanks, I pushed it with minor modifications!"
+ ** If problems occurs, testers will found it quickly, `git revert` is easy
+ ** Unit testing, regresion testing
+ * no flames (flames scare people away)
+ * being extremely polite to the people
+ * no processes helps people to join
+ * students were asked to fix a simple hack before being picked up (so they will know how build it)
+ * possitive feedback even for patches that are not going to be integrated
+ * possibility to enable/disable experimental features in runtime (people got their stuff in, can test it
+ * to make downstream consumers happy, there are feature releases and bugfixing releases was older stable releases
+ * everything was ready before fork was released publically, so people interested in new fork could contribute right a way
+ * removing contributon aggreement makes people happy
+ ** people are expected to post patches they wrote
+ * according to the bylaws, no company can get majority
+ 
+Drizzle
+-------
+
+ * infrastructure to help people to debug/build so they don't have to do it locally
+ * proceses replaced by tools and code
+ ** jenkins
+ ** automatic testing - results visible so people know when tehy broke something
+ * if there is new feature that isn't really wanted in the core, mostly plugin interface is created so people can have a choice
+ * it would be nice to have standartized agreements - something like CC - for contribution agreements
+
+How to get artists?
+------------------- 
+
+ * show up on their metting, activelly reach them
+ * they don't really know that there is opensource
+ * showing how to do, what we need, doing contest, ...
