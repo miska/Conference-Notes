@@ -1,0 +1,46 @@
+How to build a milion dollar computing infrastructure for free
+==============================================================
+:presented: 10/22/2011
+
+Volunteer computing 
+-------------------
+
+BOINC
+~~~~~
+
+ * workload is massivelly paralel
+ * you can't relly on resullts
+ * no big network IO
+ * 2M users, 6.6M computers
+
+Challenges in CERN
+~~~~~~~~~~~~~~~~~~
+
+ * really big data (~10G)
+ * frequent updates (~days)
+ * requies specific environment
+ * physicists already have infrastructure - new resources has to be seamlessly integrated
+ * no sensitive data can be put in
+ 
+CERN sollution - CernVM
+~~~~~~~~~~~~~~~~~~~~~~~
+
+ * specialized appliance
+ * application on demand fetched remotelly over internet
+ * CernVM FS
+ ** only metadata are fetched
+ ** real data are fetched on demand
+ ** readonly
+ ** uses HTTP (as it can go through anything)
+ ** content-addressable storage
+ ** chunks & file catalogs
+ *** chunks can be cached
+ ** using redirfs, wrapfs
+
+Co-Pilot
+^^^^^^^^
+
+ * framework for developing botnets
+ * uses XMPP
+ * makes distribution easier
+ * jobs are send to the job manager, which knows credentials and know who requested what and can send jobs to the volunteers, fetch them back, verify and send to the requesters
