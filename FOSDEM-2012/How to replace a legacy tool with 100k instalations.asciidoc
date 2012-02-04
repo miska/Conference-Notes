@@ -1,0 +1,13 @@
+How to replace a legacy tool with 100k installations
+====================================================
+:presented:  2/4/2012
+:type:       talk
+:conference: FOSDEM 2012
+
+Main idea is to properly communicate it. Describe new solution, document
+translation, create a lot of test cases. If you are going to do something like
+that, prepare a good replacement, test idea with friends, prepare proof of
+concept and ask people who are going to be impacted. Afterwards push it to the
+mailing list and start a discussion.
+
+Being ignored unless you have a code is pretty normal.
