@@ -1,0 +1,50 @@
+Code Review
+===========
+:url:       http://willyoutypewith.me/P/GSoC-codereview
+:presented: 23/10/2012 
+
+Experience
+----------
+
+RedHat
+~~~~~~
+
+More levels of code review, first level is desirable to be done by new guys, experts focus on second level and actual work.
+
+Drizle
+~~~~~~
+
+People submit pull requests, repository is automatically tested, then it is checked and integrated. Tip always works.
+
+Python
+~~~~~~
+
+Every patch has to be ACKed or NACKed by the guy that is responsible for the area.
+
+Evergreen
+~~~~~~~~~
+
+Sign-off process - every patch has to be signed off by somebody.
+
+Several small projects guy
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Use github pull requests, bugs.
+
+Webkit
+~~~~~~
+
+Uses Bugzilla for review project.
+
+Jango
+~~~~~
+
+No paid developers, volunteers wants to have fun, not to review patches.
+
+Overview
+--------
+
+ * providing feedback is importnt, even ENOTIME
+ * code review has high priority - first thing to do before starting coding
+ * showing statistics and queque on the web helps to motivate people to do the reviews
+ * jenkins sound like a good tool
