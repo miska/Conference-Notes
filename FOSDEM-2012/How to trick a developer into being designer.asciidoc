@@ -1,0 +1,20 @@
+How to trick a developer into being designer
+============================================
+:type:       talk
+:presented:  5/2/2012
+:presenter:  Allan Day, Seif Lotfy
+:conference: FOSDEM 2012
+
+Designers are not crazy drunken guys. Prototyping is a good idea and shows, that
+designers actually knows what are they doing.
+
+Prototyping
+~~~~~~~~~~~
+
+Key to working with designers. While working with designers, you need frequent
+iteration. It is important to make it easy for designers to try new code. You
+can't be attached to the code, as designers like to throw it away. Even designs 
+are getting thrown away. Don't ask designers to give simple advice, you'll end
+up with new design for whole application. Prototyping will also help to talk to
+each other and to appreciate designers more.
+

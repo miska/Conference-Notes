@@ -1,0 +1,13 @@
+ARM BoF
+=======
+:presenter:  Steve McIntyre
+:presented:  5/2/2012
+:type:       BoF
+:conference: FOSDEM 2012
+
+Old ABI expected floating point unit and nobody was shiping it. EABI expects no
+floating point and people started to ship it. Hard-float ABI expects floating
+point unit again. Point is to have better performance and standardized ABI.
+
+Xen and KVM are ready for A-15. amrv8 will be 64-bit. We should try to do
+Multi-Arch - more information on linaro wiki.
