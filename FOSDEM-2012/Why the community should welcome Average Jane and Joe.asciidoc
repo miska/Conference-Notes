@@ -1,0 +1,49 @@
+Why the community should welcome Average Jane and Joe
+=====================================================
+:type:       talk
+:presented:  5/2/2012
+:presenter:  Clarista:
+:conference: FOSDEM 2012
+
+Average Jane and Joe are not really technical and they don't care about open
+source as passionately as us. Geeks have strange T-shirts, attitude or hobbies
+and their are proud of it. It is difficult for non-internal people to
+understand what we are talking about. So outsiders needs translators to get
+inside and to understand how we are. If they understand what do we do, they can
+cope with us being weird. Geeks like their solitude. But to get more
+contributors, we need to get better image in the eyes of general public. And
+once we get few average people, they can help us to lure in more.
+
+How to get them?
+~~~~~~~~~~~~~~~~
+
+Welcome them. Speak to them simply. Don't be too technical. Give them some
+simple tasks they can do. They might feel confused and lost. Don't RTFM them.
+New people might be friendlier and more friendly. Good selling point? Price!
+FLOSS philosophy! Community! A lot of friends!
+
+How can they help?
+~~~~~~~~~~~~~~~~~~
+
+They can help with organization of events. They do a great job at stand. They
+can help with localization. Localization is easy way to get in. With some
+experience, they can also act as a support. They can also help to polish
+manuals to be more understandable.
+
+Q & A
+~~~~~
+
+How to avoid misconceptions? Be aware of your appearance. Try to figure out the
+most common misconceptions. And get prepared for them.
+
+It might be a good idea to start slow with general public. Don't dive into
+details of the philosophy. Lure them with attractive thing and catch them later
+:-D
+
+Why we are giving it away free? It is not that it is crappy. It is because we
+are proud of it and we have high values and we believe in creating a better
+world!
+
+How to attract average Jane? Get first one, then use her to get others. Peek
+out from the computer more often. And get a woman role models to attract more
+woman users.

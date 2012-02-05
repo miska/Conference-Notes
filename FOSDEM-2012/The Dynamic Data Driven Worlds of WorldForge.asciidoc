@@ -1,0 +1,11 @@
+The Dynamic Data Driven Worlds of WorldForge
+============================================
+:type:       talk
+:presented:  5/2/2012
+:presenter:  Alistair Riddoch
+:conference: FOSDEM 2012
+
+World data are big. So easy way around it is to create it from procedures. But
+procedures are full and players can see through them eventually. Good idea is
+that if somebody attaches object, object can modify somehow the terrain it is
+attached too.
