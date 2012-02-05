@@ -1,0 +1,24 @@
+Linux Kernel MultiPath TCP
+==========================
+:type:       Lightning Talk
+:conference: FOSDEM 2012
+:presenter:  Christoph Paasch
+:presented:  4/2/2012
+:url:        http://mptcp.info.ucl.ac.be
+
+TCP identifies connection by the 5-pule and as part of it is IP which is
+connected to the interface. Idea is to use all interfaces. New standard is
+called MTCP.
+
+MPTCP was developed by university.
+
+We start with standard socket IP. Applications use that to comunicate to
+Multipath TCP without knowing it. Multipath creates TCP subflow. It will start
+with master subsocket and determine whether other server is capable of
+multipath and if they are, it will create another TCP subflows. This way
+existing firewalls are capable of using it.
+
+Multipath keeps queue for send data and sheduler is sending them through
+subflows. On the other part there are queue for each interface but also general
+merging queue. With two same lines, for large data speed is doubled, for
+smaller requests overhead is to much.
