@@ -1,0 +1,12 @@
+Open Advice
+===========
+:url:        http://open-advice.org
+:conference: FOSDEM 2012
+:presenter:  Lydia Pintscher
+:presented:  4/2/2012
+
+Book about things that people wished to know before join community. Talk was
+about writing the book. They used git to write it, used people to get more
+people. No boundaries were set, some people wasn't really sure what to do.
+Nobody follows deadlines. Although people liked the idea, they might not
+contribute.

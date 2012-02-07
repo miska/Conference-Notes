@@ -1,0 +1,28 @@
+Sustainable mentorship
+======================
+:type:       talk
+:conference: FOSDEM 2012
+:presented:  4/2/2012
+:presenter:  Dave Neary
+
+Out of 58 GSoC students only 11 kept contributing after a year. Good example is
+GNU Lilipond. Before getting out of project, he decided to train his successors
+and only 25% stayed. Similar results from different projects. So are we doing
+something wrong?
+
+* tasks takes too long, they are too hard
+* communication failures
+** regular meetings helps
+* mentor burn out
+* no follow through
+** task based mentorship
+** should be relation based
+
+What to do?
+-----------
+
+Allow everybody to try and allow everybody to fail. Set barriers right - too
+high make it hard to contribute, too low floods mentors and people doesn't
+learn. We should make relationships more important than tasks. People should
+have relation to their mentors. Students should become mentors, because they
+knew how hard was it for them. And they will feel important.

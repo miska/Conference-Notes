@@ -1,0 +1,36 @@
+Liberating ARM's Mali GPU
+=========================
+:conference: FOSDEM 2012
+:presented:  4/2/2012
+:presenter:  Luc Verhaegen
+:type:       talk
+
+Everything is simple in x86 world, but nobody is taking serious look into ARM.
+There is a lot of ARM vendors. Imagination (PowerVR), Nvigia, Qualcom, ARM
+(Mali), ...
+
+Mali 200
+--------
+
+Vertex(Geometry) processor, Fragment(Pixel) processor
+
+Mali 400
+--------
+
+More Pixel processors and L2 cache
+
+Current state
+-------------
+
+Kernel module is open source and working. 50% of user space is ESSL Compiler.
+Rest is the infrastructure meant just to push data to the compiler.
+
+To reverse engineer, use LD_PRELOAD and track open, ioctl and mmap
+
+Limare
+------
+
+Prototyping only, driver is far in the future. Command stream build up and
+interface with compiler works. Small, simple tests.
+
+Create simple frame -> capture command -> replay it -> reduce thinks not needed stuff -> analyze the results -> try to fix it
