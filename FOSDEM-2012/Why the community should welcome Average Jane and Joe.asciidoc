@@ -15,7 +15,7 @@ contributors, we need to get better image in the eyes of general public. And
 once we get few average people, they can help us to lure in more.
 
 How to get them?
-~~~~~~~~~~~~~~~~
+----------------
 
 Welcome them. Speak to them simply. Don't be too technical. Give them some
 simple tasks they can do. They might feel confused and lost. Don't RTFM them.
@@ -23,7 +23,7 @@ New people might be friendlier and more friendly. Good selling point? Price!
 FLOSS philosophy! Community! A lot of friends!
 
 How can they help?
-~~~~~~~~~~~~~~~~~~
+------------------
 
 They can help with organization of events. They do a great job at stand. They
 can help with localization. Localization is easy way to get in. With some
@@ -31,7 +31,7 @@ experience, they can also act as a support. They can also help to polish
 manuals to be more understandable.
 
 Q & A
-~~~~~
+-----
 
 How to avoid misconceptions? Be aware of your appearance. Try to figure out the
 most common misconceptions. And get prepared for them.

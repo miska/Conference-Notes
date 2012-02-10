@@ -9,7 +9,7 @@ Designers are not crazy drunken guys. Prototyping is a good idea and shows, that
 designers actually knows what are they doing.
 
 Prototyping
-~~~~~~~~~~~
+-----------
 
 Key to working with designers. While working with designers, you need frequent
 iteration. It is important to make it easy for designers to try new code. You
