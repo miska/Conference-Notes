@@ -1,0 +1,54 @@
+Towards Unified Messaging
+=========================
+
+Asynchronous Messaging
+-----------------------
+
+Flow control is important to prevent senders from flooding receivers.
+
+Existing solutions
+~~~~~~~~~~~~~~~~~~
+
+JMS
+^^^
+
+* not protocol
+* java specific
+* closed
+
+AMQP
+^^^^
+
+* http://www.amqp.org
+* open
+
+AMQP 1.0
+++++++++
+
+* protocol choice is up to application
+* network consists from nodes and links
+* permits structured data exchange between endpoint in different languages
+** Python, C++, Ruby, ...
+
+Implementations
++++++++++++++++
+
+.Qpid from Apache
+* wide platform support
+* consistent API across languages
+* blocking/non-blocking API
+* supports variety of authentications
+** SASL
+** Kerberos
+** SSL
+* connection \superset session \superset message
+
+.RabbitMQ
+
+.ZeroMQ
+* does some simplifications to make it easier to use
+
+.Red Hat Enterprise MRG
+* M - Messaging based on Qpid
+* R - Realtime kernel
+* G - Grid

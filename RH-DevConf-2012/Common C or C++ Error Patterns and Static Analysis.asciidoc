@@ -1,0 +1,96 @@
+Common C/C++ Error Patterns & Static Analysis
+=============================================
+
+Static Analysis
+---------------
+
+Analysing code without actually executing it. Usually needs modified compiler,
+requires source code and mostly takes same time as compilation. Clean code
+helps, but still can't find everything.
+
+Techniques
+~~~~~~~~~~
+
+* error patterns
+** missing break, semicolon, ...
+* enhanced type checking
+** may use attributes
+* data-flow analysis
+** solving data flow equations
+* abstract interpretation
+** evaluates a program for all possible inputs
+** needs some descriptions of external functions
+
+Common Code Weaknesses in C/C++
+-------------------------------
+
+All analyzers threats errors differently. Organization Mitre collects commons
+errors and how to fix them.
+
+http://cwe.mitre.org/data/definitions/398.html
+
+Boundary problems
+~~~~~~~~~~~~~~~~~
+
+Buffer overflows/underflows or signed/unsigned types mismatch. Static analyzers
+are good at discovering it.
+
+Resource leaks
+~~~~~~~~~~~~~~
+
+Important to fix even in small programs.
+
+Memory safety
+~~~~~~~~~~~~~
+
+Dereferencing NULL, double free etc
+
+Dead Code Checking
+~~~~~~~~~~~~~~~~~~
+
+Might not be meant as a dead code, but result from wrong branching
+
+Uninitialized variables
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Might be uninitialized only in uncommon branches.
+
+Race conditions
+~~~~~~~~~~~~~~~
+
+Hard to debug, hard to fix, bu sometimes can be found by static analysis.
+
+Defensive programming
+---------------------
+
+Techniques to avoid bugs. Try to use compiler protection mechanisms, don't
+ignore warnings. Never trust anyone, never expect anything.
+
+Static analysis tools
+---------------------
+
+.GCC
+* Wall is a good idea
+* supports plugins
+** hooks inside just after parser and before optimizer and binary code generator
+
+.Clang
+* based on LLVM
+
+.sparse
+* supports only C
+* provides GCC wrapper cgcc
+* provides library to build custom analyzers based on sparse
+
+.cppcheck
+* own parser and preprocesors
+* can be configured to report also coding style issues
+
+.Coverity
+* enterprise tool - non-free
+* scan available for open source project on http://scan.coverity.com
+* more verbose about errors
+* used for RHEL and for RHEL/potentional RHEL packages in Fedora
+
+Best approach is to combine all tools as sets of problems reported by tools are not the same.
+
