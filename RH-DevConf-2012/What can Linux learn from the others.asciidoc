@@ -1,0 +1,24 @@
+What can Linux learn from the others
+====================================
+
+Inspiration from Solaris
+------------------------
+
+.STREAM
+* I/O subsystem that is modular and can be stacked one on top of another.
+
+.Kernel stability
+* In Solaris, you have just stable interfaces which are supported and not
+  supposed to change, but everything beneath that can change.
+
+.ZFS
+* We are getting BTRFS
+
+.Zones
+* lightweight virtualization
+
+.RBAC
+* privilege granularity
+* root is set of privileges
+* anybody can be root
+

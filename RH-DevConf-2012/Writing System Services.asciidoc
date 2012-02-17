@@ -1,0 +1,37 @@
+Do's and Don'ts When Writing System Services
+============================================
+
+First thing to do is not to fork and especially not to double double fork. It
+makes hard to figure out anything about the process and init systems nowadays
+can do a good job supervising the process. But without forking, init doesn't
+know when service is ready. Systemd comes with 'sd_notify()' function to get
+notified about successful initialization.
+
+Don't write PID files. Systemd knows your PID unless you forked!
+
+sd_notify can send READY=1 to set that service is ready. It can also use
+STATUS=... to tell what is it doing right now.
+
+Configuration belongs to configuration file in /etc. No to init script or into
+/etc/sysconfig. Providing drop-in directory for adding configuration snippets
+is nice, don't try to do generator. Sane defaults should be compiled-in.
+
+Regarding logging, use syslog or stdout/stderr.
+
+Limit security impact - drop privileges you don't need, use capabilities.
+Capabilities are beyond what normal user can do, all of them means effectively
+becoming root. pscap can help in identifying capabilities.
+
+Honour SIGTERM. Support SIGHUP but also provide a way for synchronous reload.
+
+Use D-Bus as IPC.
+
+Never spawn daemons out of libraries.
+
+Use socket activation if possible. Start only when it makes sense.
+
+Put daemon binary in /usr/lib not in the $PATH
+
+Send systemd unit file upstream and try to keep one unit file per deamon.
+
+Watch for network configuration changes. Computers migrate
