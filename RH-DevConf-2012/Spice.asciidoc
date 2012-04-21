@@ -1,0 +1,54 @@
+Spice
+=====
+
+Remote desktop protocol. Uses paravirtualized graphics card and can also do
+smartcards, audio, video or USB. Agent should be running inside the machine and
+thanks to it resizing window changes resolution, copy&paste works.
+
+
+Paravirtualized graphics
+------------------------
+
+Paravirtuualized graphics helps to capture drawing commands thus supports more
+stuff. In the guest it hooks as QXL driver and after that it is processed by
+qemu. If client can't keep up, some commands can be discarded.
+
+Xspice
+------
+
+Instead of running Xserver, running just spice server similarly to xvnc.
+
+Boxes
+-----
+
+Focused to end-users. Uses libvirt.
+
+USB redirection
+---------------
+
+You can plug-in anything into client and it will get plugged into guest. We
+have usb-guest connecting to usb-host which actually has USB devices and shares
+it to the guest.
+
+Why not reuse usbip? It is very low-level. It works for some devices, but not
+for devices that have some latency problems. Protocol was too simple and it
+required kernel driver on both sides. New solution works completely from
+userspace.
+
+Some usb devices requires very low latency and buffering can be untorelable.
+Resolution is to support streams: first packet starts stream and from then
+things are getting precached.
+
+Status
+~~~~~~
+
+USB 1.1 & 2.0 are supported and integrated into Spice and libvirt
+
+Future
+~~~~~~
+
+Live migration will be a little bit tricky. Qemu usb infrastructure doesn't
+support live migration.
+
+Another thing is USB 3/XHCI which actually has much better interface and will
+be easier to support.

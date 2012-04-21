@@ -1,0 +1,4 @@
+oVirt
+=====
+
+Designed to use kvm. Provides nice webUI, decides where to create a virtual machine, supports multiple roles, ...

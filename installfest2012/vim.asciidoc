@@ -1,0 +1,12 @@
+vim
+===
+
+:reg - vypis registru
+
+ZZ - ukonci a ulozi soubor
+f. - '.' je znak na ktery chci skocit
+q. - nahrava makro jmenem '.' Ukonci se opet pomoci 'q'
+@. - provede makro
+". - provede operaci s registrem - priklad "ap
+:iabbrev zkratka "expandovany text" - automaticky nahrazuje text primo pri editaci
+:iunabbrev zkratka - zruseni automatickeho nahrazovani

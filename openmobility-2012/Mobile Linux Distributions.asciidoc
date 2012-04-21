@@ -1,0 +1,105 @@
+Mobile Linux Distributions
+==========================
+
+Android
+-------
+
+* mostly used
+* developed by Android Inc. which was bought by Google in 2005
+* doesn't have X, uses framebuffer directly
+* used to be Java only, now even NDK available
+* to use Google Play, there are some conditions -> there are many alternative stores
+* many kernel patches, slowly getting upstreamed
+* open source, but closed development model
+
+WebOS
+-----
+
+* originaly developed by Palm, bough by HP
+* based on OpenEmbedded
+* doesn't use X server
+* primaly based on web technologies, NDK released later
+* parts of WebOS 3 uses Qt/QML, but not accessible to developers
+* oficial catalog with georestrictions
+* freeware catalog available
+* uses ipkg
+* uncertain future
+
+Maemo
+-----
+
+* based on Debian
+* uses GTK extension called Hildon for GUI
+* has ordinary X server
+* contains non-opensource components
+
+Maemo 5
+^^^^^^^
+
+* first Maemo for cell phones
+* clutter for animations
+* OpenGL ES
+* central repository with QA
+* Ovi Store
+* nice system to merge contantacts, messages, SMSes and stuff
+* officially supporte is GTK and QT, but as it is GNU/Linux, anything works
+
+Harmattan
+---------
+
+* crossover between Maemo and Meego
+* based on debian
+* uses parts of Meego UI
+* Ovi store as a main repository
+* community based repository exists
+
+Meego
+-----
+
+* cooperative effort between Nokia and Intel
+* whole distribution
+* rpm as a package format
+* uses Open Build System
+* last version was 1.3 which integrated systemd
+* Nokia left it in February 2011
+* Intel joined Samsung and created Tizen
+* from Meego rises Mer and from it Nemo and Plasma Active
+
+Tizen
+-----
+
+* official MeeGo successor
+* reuses nearly nothing
+* uses HTML5 and Enlightment libraries for UI
+
+Mer
+---
+
+* community based successor to MeeGo
+* no GUI
+* creating core distribution people can reuse
+
+Nemo
+----
+
+* based on Mer
+* used MeeGo GUI
+
+Plasma Active
+-------------
+
+* based on Mer
+
+OpenMoko
+--------
+
+* original distribution is no longer around
+* SHR is community succesor
+* opkg
+* using OpenEmbedded
+
+Qt Moko
+-------
+
+* community based distribution for OpenMoko
+* uses Qt Extended, formerly Qtopia

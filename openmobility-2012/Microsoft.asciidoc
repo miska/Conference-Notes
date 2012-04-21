@@ -1,0 +1,18 @@
+.NET Micro Framework
+====================
+
+Highlevel language to do low level stuff. Runs on bare metal, supports only 32bits procesorss, not necesarly ARM. It isn't realtime.
+"I don't need to use some crappy IDE, I use Visual Studio"
+
+.NET Gadgeteer
+--------------
+
+* opensource hardware
+* uses .NET Micro Framework
+* education
+* rapid prototyping
+* extends .NET Micro Framework to make it even easier
+* different sockets - letters specifies protocol, number shows which one, socket Z is vendor/board specific
+* lot of modules
+* standartized socket interface
+* they have interface to car

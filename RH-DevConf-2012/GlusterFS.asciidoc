@@ -1,0 +1,34 @@
+GlusterFS
+=========
+
+Based on bricks. Bricks can be on one node or on multiple nodes. Bricks can be combined into volumes and gluster cluster is called trusted pool. Preferred filesystem is XFS with inode size at least 512. Volume is combination of the bricks and is mountable by gluster clients. It runs in userspace and only server needs to run gluster daemon.
+
+Stripped volumes
+----------------
+
+Uses sparsed files and distributes everything across all bricks. Resembles to RAID-0.
+
+Replicated volumes
+------------------
+
+Comparable with RAID-1, duplicates all files.
+
+Distributed volumes
+-------------------
+
+Just a bunch of bricks. No duplication, but files are stored as whole.
+
+Distributed Replicated Volumes
+------------------------------
+
+RAID-1 over the network. Distributed volume of replicated volumes.
+
+How is distribution done?
+-------------------------
+
+Gluster uses the path nae, hashes it, every brick has range of hash values and based on that it decides which brick to use.
+
+Failover
+--------
+
+Even if server where volume was created fails, even clients knows about all the bricks and will switch to the other servers.

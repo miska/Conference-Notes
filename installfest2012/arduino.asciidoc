@@ -1,0 +1,17 @@
+Arduino
+=======
+
+Historie
+--------
+
+* 2003 studentsky projekt wiring
+* 2005 zjednoduseno a pojmenovano Arduino
+* vse uvolneno jako open source
+
+Co to je?
+---------
+
+* platforma pro prototyping. Obsahuje HW i SW
+* deska s AVR ATmega
+* multiplatformni IDE psany v Jave
+* programuje se v jazyce Wiring (C/C++ s knihovnou wiring)

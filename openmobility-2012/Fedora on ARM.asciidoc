@@ -1,0 +1,20 @@
+Fedora on ARM
+=============
+
+Arm je sekundarni architektura. Ze neco nechodi nevadi a nebrzdi to Fedoru. Sekundarni architektura si musi HW sehnat sama. Fedora neposkytuje zdroje. Pouzivaji se stejne balicky.
+
+Co je cilem podporovat? Netbooky/nettopy/tablety. Na smartphony se necili. A doufa se v servery. Dve subarchitektury - armv5te a armv7 + hardfp (vfp3-d16).
+
+Podpora ARMu ve Fedore zacala ve firme Marvell, kde si s tim zacali hrat zamestnanci. Meli vlastni HW, vlastni build stroje a vlastni pacthovany balicky. Pracovali na Fedore 10 az Fedore 12. Pak toho nechali
+
+Pak nastoupila Seneca College, Toronto. Zacali s normalnim HW s cilem ucit na tom zaky.
+
+Soucasny stav je, ze Fedora je bootstrapnuta.
+
+Existuje F-14 pro OLPC a Raspberry Pi.
+
+Hotovo 10k balicku 1k chybi.
+
+Distribuuje se jako archiv s roootfs, zatim nic vic.
+
+Pracuje se na tom, aby se ARM stal primarni architekturou, ale neni to uplne snadny.

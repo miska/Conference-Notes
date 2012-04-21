@@ -1,0 +1,55 @@
+ARM
+===
+
+Acorn RISC Machine -> Advanced RISC Machine
+
+Kdysi existovala firma Acorn, co vyrabela 8-bitove ppocitace, potrebovala
+navrhnout rychle novej levnej chip. Vysli z RISC procesoru, ktery navrhli
+studenti na univerzite v Berkeley.
+
+Vznikl ARM1, jednoduchy RISC, pouzival pipeline a mel nativne 32 bitu a 37
+registru. Ve sve dobe byl asi 4x rychlejsi nez Motorola a 86 a mel ctyrikrat
+min tranzistoru. Prvni chipy vznikly v roce 1985. ARM2 byl v roce 1986 uveden
+na trh a byly pouzity v osobnich pocitacich Archimedes.
+
+ARM1
+----
+
+* bez HW nasobeni
+* zadna cache
+
+ARM2
+----
+
+* HW nasobeni
+
+ARMv2a
+------
+
+* graficky cip na cipu
+* s ARM3 pridana cache (spolecna pro data a instrukce)
+
+ARMv3
+-----
+
+* ARM6
+* 32-bitove adresovani, predchozi adresovali jen 24
+* porad se jeste vyrabi
+
+ARM7
+----
+
+* pridano thumb a JTAG
+
+ARMv4 & StrongARM
+-----------------
+
+* vyvynul DEC, pozdeji koupil Intel - predchudce XScale
+* zamereni na PDA
+
+Obecne
+------
+
+Kazda instrukce muze obsahovat podminku kdy se ma spustit (podle priznaku) a
+ktere priznaky ma nastavit -> neni treba resit podminene skoky. Bitove posuny
+se deji diky ALU pomoci priznaku zadarmo.

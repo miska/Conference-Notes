@@ -1,0 +1,10 @@
+Secondary Architectures
+=======================
+
+s390
+PPC - F-16
+ARM - F-14, F-15, F-17
+      armv5te soft-float
+      armv7   hardfp -neon vfp16
+      only native builds
+Sparc - dead

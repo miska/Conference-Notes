@@ -1,0 +1,40 @@
+Full Disk Encryption
+====================
+
+Can be implemented on:
+* disk level
+* disk controller - chipset
+* hw accelerated software encryption
+* userspace
+
+Disk encryption always uses symetric algorithms and works on top of block (encryption atomic unit). Initialization vector tweaks every sector so even if there are same data on the disk, data are encrypted into different cypher text. Problem can be, that initialization vector is kind of known. Using encrypted disk over network (nbd, iSCSI) is not secure!
+
+Key storage
+-----------
+
+Destroying key means destroying data. Can be intended or just operator error. It is a good idea to store backup key somewhere.
+
+Truecrypt
+---------
+
+Most known disk encryption, open source. Provides several encryptions mode, even combination of them, use XTS mode and provides hidden disk. Uses dm-crypt backend.
+
+loop-AES
+--------
+
+Old and never reached/will never reach upstream. Implements multikey. Doesn't implement key storing.
+
+BitLocker
+---------
+
+Several ways of storing key. Very modular.
+
+LUKS
+----
+
+Native on Linux. Doesn't have any connection to enterprise technologies. Simple. Strict separation between engine and key storage.
+
+dm-crypt
+--------
+
+Maps virtual plaintext device, no key management. Supports key chaining.
